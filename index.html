@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Boucherie des Pays D'Oc — Castres</title>
+  <meta name="description" content="Des produits de qualité sélectionnés pour leur goût et leur authenticité. 17 Rue Émile Zola, 81100 Castres." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <header id="header">
+    <div class="header-inner">
+      <a href="#" class="logo">
+        <img src="logo.jpg" alt="Boucherie des Pays D'Oc" class="logo-img" />
+      </a>
+      <nav class="nav-links" id="nav-links">
+        <a href="#produits">Nos viandes</a>
+        <a href="#apropos">À propos</a>
+        <a href="#horaires">Horaires</a>
+        <a href="#contact">Contact</a>
+        <a href="#newsletter" class="nav-cta">Newsletter</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="accueil" class="hero">
+    <div class="hero-text">
+      <p class="hero-eyebrow">Castres, Occitanie</p>
+      <h1>Boucherie<br/><em>des Pays D'Oc</em></h1>
+      <p class="hero-desc">Des produits de qualité sélectionnés<br/>pour leur goût et leur authenticité.</p>
+      <a href="#produits" class="link-arrow">Découvrir nos produits <span>→</span></a>
+    </div>
+    <div class="hero-visual">
+      <img src="rouge.png" alt="Boucherie des Pays D'Oc" class="hero-photo" />
+    </div>
+  </section>
+
+  <!-- DIVIDER -->
+  <div class="marquee-bar">
+    <div class="marquee-track">
+      <span>Bœuf Charolais</span>
+      <span class="dot">·</span>
+      <span>Agneau d'Occitanie</span>
+      <span class="dot">·</span>
+      <span>Veau rosé</span>
+      <span class="dot">·</span>
+      <span>Porc fermier</span>
+      <span class="dot">·</span>
+      <span>Fait maison</span>
+      <span class="dot">·</span>
+      <span>Éleveurs locaux</span>
+      <span class="dot">·</span>
+      <span>Bœuf Charolais</span>
+      <span class="dot">·</span>
+      <span>Agneau d'Occitanie</span>
+      <span class="dot">·</span>
+      <span>Veau rosé</span>
+      <span class="dot">·</span>
+      <span>Porc fermier</span>
+      <span class="dot">·</span>
+      <span>Fait maison</span>
+      <span class="dot">·</span>
+      <span>Éleveurs locaux</span>
+      <span class="dot">·</span>
+    </div>
+  </div>
+
+  <!-- PRODUITS -->
+  <section id="produits" class="section">
+    <div class="section-intro">
+      <p class="label">Sélection</p>
+      <h2>Nos viandes<br/><em>du moment</em></h2>
+    </div>
+
+    <div class="filters">
+      <button class="filter-btn active" data-filter="all">Tout</button>
+      <button class="filter-btn" data-filter="boeuf">Bœuf</button>
+      <button class="filter-btn" data-filter="agneau">Agneau</button>
+      <button class="filter-btn" data-filter="porc">Porc</button>
+      <button class="filter-btn" data-filter="veau">Veau</button>
+      <button class="filter-btn" data-filter="maison">Fait maison</button>
+    </div>
+
+    <div class="products-grid" id="products-grid">
+
+      <div class="product-card" data-cat="boeuf">
+        <div class="product-img">
+          <div class="img-placeholder"></div>
+          <span class="product-tag">Bœuf</span>
+        </div>
+        <div class="product-info">
+          <h3>Entrecôte Charolaise</h3>
+          <p>Élevage plein air · persillée à souhait</p>
+          <span class="price">28,90 €<small>/kg</small></span>
+        </div>
+      </div>
+
+      <div class="product-card featured" data-cat="boeuf">
+        <div class="product-img">
+          <div class="img-placeholder dark"></div>
+          <span class="product-tag red">Sélection boucher</span>
+        </div>
+        <div class="product-info">
+          <h3>Côte de bœuf maturée</h3>
+          <p>Affinée 30 jours · tendreté incomparable</p>
+          <span class="price">42,00 €<small>/kg</small></span>
+        </div>
+      </div>
+
+      <div class="product-card" data-cat="boeuf">
+        <div class="product-img">
+          <div class="img-placeholder"></div>
+          <span class="product-tag">Bœuf</span>
+        </div>
+        <div class="product-info">
+          <h3>Steaks hachés maison</h3>
+          <p>100 % bœuf pur · préparés chaque matin</p>
+          <span class="price">14,90 €<small>/kg</small></span>
+        </div>
+      </div>
+
+      <div class="product-card" data-cat="agneau">
+        <div class="product-img">
+          <div class="img-placeholder"></div>
+          <span class="product-tag">Agneau</span>
+        </div>
+        <div class="product-info">
+          <h3>Gigot d'agneau fermier</h3>
+          <p>Élevé en Occitanie · chair fine et délicate</p>
+          <span class="price">19,50 €<small>/kg</small></span>
+        </div>
+      </div>
+
+      <div class="product-card" data-cat="porc">
+        <div class="product-img">
+          <div class="img-placeholder"></div>
+          <span class="product-tag">Porc</span>
+        </div>
+        <div class="product-info">
+          <h3>Côtes de porc fermier</h3>
+          <p>Plein air · alimentation naturelle</p>
+          <span class="price">11,90 €<small>/kg</small></span>
+        </div>
+      </div>
+
+      <div class="product-card" data-cat="veau">
+        <div class="product-img">
+          <div class="img-placeholder"></div>
+          <span class="product-tag">Veau</span>
+        </div>
+        <div class="product-info">
+          <h3>Escalope de veau</h3>
+          <p>Veau rosé supérieur · découpé sur mesure</p>
+          <span class="price">22,00 €<small>/kg</small></span>
+        </div>
+      </div>
+
+      <div class="product-card" data-cat="maison">
+        <div class="product-img">
+          <div class="img-placeholder"></div>
+          <span class="product-tag">Fait maison</span>
+        </div>
+        <div class="product-info">
+          <h3>Merguez artisanales</h3>
+          <p>Recette maison · préparées chaque jour</p>
+          <span class="price">13,50 €<small>/kg</small></span>
+        </div>
+      </div>
+
+      <div class="product-card" data-cat="maison">
+        <div class="product-img">
+          <div class="img-placeholder"></div>
+          <span class="product-tag">Fait maison</span>
+        </div>
+        <div class="product-info">
+          <h3>Saucisses de Toulouse</h3>
+          <p>Tradition du Sud-Ouest · goût authentique</p>
+          <span class="price">9,90 €<small>/kg</small></span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- À PROPOS -->
+  <section id="apropos" class="section about-section">
+    <div class="about-grid">
+      <div class="about-img-col">
+        <img src="mathieu.jpg" alt="Mathieu, votre boucher" class="about-photo" />
+      </div>
+      <div class="about-text-col">
+        <p class="label">Notre histoire</p>
+        <h2>Le goût du terroir,<br/><em>l'exigence du métier</em></h2>
+        <p>La Boucherie des Pays D'Oc est un engagement envers la qualité, le respect des animaux et les saveurs authentiques du sud de la France.</p>
+        <p>Nous sélectionnons nos viandes auprès d'éleveurs locaux de confiance, pour vous garantir fraîcheur, traçabilité et plaisir à chaque bouchée.</p>
+        <blockquote>
+          « Des produits de qualité sélectionnés<br/>pour leur goût et leur authenticité. »
+        </blockquote>
+        <ul class="about-list">
+          <li><span>—</span> Éleveurs partenaires locaux</li>
+          <li><span>—</span> Découpe artisanale sur mesure</li>
+          <li><span>—</span> Conseils personnalisés</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section id="newsletter" class="section newsletter-section">
+    <div class="newsletter-inner">
+      <div class="nl-text">
+        <p class="label">Newsletter</p>
+        <h2>Nos offres,<br/><em>directement chez vous</em></h2>
+        <p>Inscrivez-vous pour recevoir nos promotions, nouvelles arrivées et spécialités saisonnières.</p>
+      </div>
+      <form id="newsletter-form" class="nl-form">
+        <div class="nl-row">
+          <input type="email" placeholder="Votre adresse email" required />
+          <button type="submit">S'inscrire</button>
+        </div>
+        <p class="nl-legal">Vos données restent confidentielles. Désinscription possible à tout moment.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- HORAIRES & CONTACT -->
+  <section id="horaires" class="section info-section" >
+    <div class="info-grid" id="contact">
+
+      <div class="info-block">
+        <p class="label">Horaires</p>
+        <table class="hours-table">
+          <tr><td>Lundi</td><td>Fermé</td></tr>
+          <tr><td>Mardi – Vendredi</td><td>8h00 – 19h30</td></tr>
+          <tr><td>Samedi</td><td>7h30 – 19h30</td></tr>
+          <tr><td>Dimanche</td><td>8h00 – 13h00</td></tr>
+        </table>
+      </div>
+
+      <div class="info-block">
+        <p class="label">Contact</p>
+        <ul class="contact-list">
+          <li>
+            <span class="contact-label">Adresse</span>
+            <span>17 Rue Émile Zola<br/>81100 Castres</span>
+          </li>
+          <li>
+            <span class="contact-label">Téléphone</span>
+            <a href="tel:+33662846438">06 62 84 64 38</a>
+          </li>
+          <li>
+            <span class="contact-label">Email</span>
+            <a href="mailto:Boucherie.oc@gmail.com">Boucherie.oc@gmail.com</a>
+          </li>
+        </ul>
+        <a href="tel:+33662846438" class="btn-primary">Appeler</a>
+      </div>
+
+      <div class="info-block map-block">
+        <p class="label">Nous trouver</p>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2880.0!2d2.246!3d43.606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12aebce3c5c1b9f3%3A0x0!2s17+Rue+%C3%89mile+Zola%2C+81100+Castres!5e0!3m2!1sfr!2sfr!4v1"
+          width="100%" height="260"
+          style="border:0;"
+          allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Boucherie des Pays D'Oc">
+        </iframe>
+        <a href="https://www.google.com/maps/dir/?api=1&destination=17+Rue+Emile+Zola,+81100+Castres"
+           target="_blank" rel="noopener noreferrer" class="link-arrow">
+          Itinéraire <span>→</span>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="logo.jpg" alt="Logo" class="footer-logo" />
+        <p class="footer-tagline">17 Rue Émile Zola · 81100 Castres</p>
+      </div>
+      <nav class="footer-nav">
+        <a href="#produits">Nos viandes</a>
+        <a href="#apropos">À propos</a>
+        <a href="#horaires">Horaires</a>
+        <a href="#contact">Contact</a>
+        <a href="#newsletter">Newsletter</a>
+      </nav>
+      <div class="footer-contact-info">
+        <a href="tel:+33662846438">06 62 84 64 38</a>
+        <a href="mailto:Boucherie.oc@gmail.com">Boucherie.oc@gmail.com</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Boucherie des Pays D'Oc</p>
+      <p>Tous droits réservés</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
