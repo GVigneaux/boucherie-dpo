@@ -430,6 +430,21 @@ img { display: block; max-width: 100%; }
   display: block;
 }
 
+.about-label-block {
+  width: 100%;
+  aspect-ratio: 3/4;
+  background: var(--light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-serif);
+  font-size: clamp(3rem, 8vw, 6rem);
+  font-weight: 300;
+  font-style: italic;
+  color: var(--black);
+  letter-spacing: 0.02em;
+}
+
 .about-text-col h2 { margin-bottom: 2rem; }
 
 .about-text-col p {
@@ -785,3 +800,54 @@ blockquote {
   .nl-row input { border: 1px solid var(--black); padding: 0.9rem 1.25rem; }
   .nl-row button { width: 100%; justify-content: center; text-align: center; }
 }
+
+/* ===========================
+   SOCIAL LINKS
+=========================== */
+.social-links {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--black);
+  border: 1px solid var(--border);
+  padding: 0.5rem 1rem;
+  transition: background var(--transition), color var(--transition);
+}
+
+.social-link:hover {
+  background: var(--black);
+  color: var(--white);
+  border-color: var(--black);
+}
+
+.footer-social {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 0.75rem;
+}
+
+.footer-social a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border: 1px solid rgba(255,255,255,0.2);
+  transition: opacity var(--transition);
+}
+
+.footer-contact-info .footer-social a.fb { color: #1877F2; }
+.footer-contact-info .footer-social a.ig { color: #E1306C; }
+.footer-contact-info .footer-social a:hover { color: inherit; opacity: 0.75; }
+
+.footer-social a:hover { opacity: 0.75; }
